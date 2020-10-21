@@ -1,11 +1,14 @@
 *
 	box-sizing: border-box
 body
-	font-family: sans serif
+	font-family: sans-serif
+	background: #E5E5E5
 .header
 	background: #FA8C16
 	padding-top: 16px
 	padding-bottom: 16px
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15)
+	margin-bottom: 30px
 	&_wrapper
 		max-width: 1200px
 		width: 90%
@@ -55,3 +58,85 @@ body
 	display: flex
 	justify-content: center
 	align-items: center
+
+.content
+	max-width: 1200px
+	width: 90%
+	margin: 0 auto
+
+.posts
+	max-width: 800px
+.post
+	background: #fafafa
+	border: 1px solid #e8e8e8
+	margin-bottom: 30px
+	&_body
+		padding-left: 35px
+		padding-right: 35px
+		padding-top: 35px
+		padding-bottom: 0
+		&_title
+			margin-top: 0
+			margin-bottom: 19px
+			font-weight: 600
+			font-size: 16px
+			line-height: 24px
+		&_text
+			color: #262626
+			font-weight: normal
+			font-size: 14px
+			line-height: 22px
+		&_tags
+			margin-bottom: 22px
+		&_tag
+			color: #BFBFBF
+			font-size: 14px
+			line-height: 22px
+			margin-right: 10px
+			text-decoration: none
+	&_footer
+		border-top: 1px solid #E8E8E8
+		background: #FAFAFA
+		display: flex
+		justify-content: space-between
+		padding-left: 35px
+		padding-right: 35px
+		padding-top: 13px
+		padding-bottom: 13px
+	&_buttons
+		display: flex
+		align-items: center
+	&_button
+		background-color: transparent
+		border: none
+		color: #8C8C8C
+		display: flex
+		align-items: center
+		font-size: 14px
+		line-height: 22px
+		margin-right: 19px
+		cursor: pointer
+		.icon
+			fill: #8C8C8C
+			&_like,&_comment
+				margin-right: 6px
+
+	&_author
+		display: flex
+		align-items: center
+		text-align: right
+		&_avatar
+			width: 34px
+			height: 34px
+			margin-left: 9px
+			border-radius: 4px
+		&_username
+			display: block
+			color: #8C8C8C
+			font-size: 12px
+			line-height: 20px
+			text-decoration: none
+	&_time
+		font-size: 12px
+		line-height: 20px
+		color: #bfbfbf
